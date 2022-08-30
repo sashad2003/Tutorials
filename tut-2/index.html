@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>נגישות שיעור מס' 2</title>
+</head>
+
+<body>
+
+    <h1>שיעור נגישות מס'2</h1>
+
+    <h2>תפריטים</h2>
+   
+    <div class="menus">
+        <div class="menu">
+            <a href="/about">עמוד הבית</a>
+            <a href="/">אודות</a>
+            <a href="/">צור קשר</a>
+        </div>
+        <nav class="menu">
+            <a href="#">עמוד הבית</a>
+            <a href="#">אודות</a>
+            <a href="#">צור קשר</a>
+        </nav>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">עמוד הבית</a></li>
+                <li><a href="#">אודות</a></li>
+                <li><a href="#">צור קשר</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h2>כפתורים</h2>
+    <div class="buttons">
+
+        <button class="btn">כפתור</button>
+        <!--     <button class="btn" disabled>כפתור</button> -->
+        <div class="btn">כפתור</div>
+        <div class="btn" role="button" tabindex="0">כפתור</div>
+
+
+        <button class="button" aria-label="חיפוש">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;"
+                xml:space="preserve" aria-hidden="true">
+                <g>
+                    <g>
+                        <path d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667
+              S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732
+              c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667
+              c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" />
+                    </g>
+                </g>
+            </svg>
+        </button>
+
+
+    </div>
+
+    <h2>תמונות</h2>
+    <div class="images">
+
+        <img src="https://img.freepik.com/free-photo/medium-shot-happy-woman-wheelchair_23-2148476483.jpg?w=700&t=st=1661868303~exp=1661868903~hmac=68a86254dbc02e8e8e91ee37d5c5b175143dee93f930b0601383ce453cb96569"
+            alt="אישה צעירה על כסא גלגלים">
+
+    </div>
+
+    <div class="inputs">
+
+        <input type="text" placeholder="הזינו שם">
+        <label>
+            הזינו שם
+            <input type="text" placeholder="">
+        </label>
+
+
+
+        <fieldset>
+            <legend>צור קשר</legend>
+            <label for="input-mail" id="label-mail">דואר אלקטרוני</label>
+            <input type="email" id="input-mail" aria-labelledby="label-mail">
+
+            <label for="input-phone" id="label-phone">טלפון</label>
+            <input type="email" id="input-phone" aria-labelledby="label-phone">
+        </fieldset>
+    </div>
+
+</body>
+
+</html>
